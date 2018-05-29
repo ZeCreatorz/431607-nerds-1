@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Pavel Dmitriev](https://up.htmlacademy.ru/htmlcss/21/user/431607).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Зайцев](https://htmlacademy.ru/profile/id89805).
 
 ---
 
