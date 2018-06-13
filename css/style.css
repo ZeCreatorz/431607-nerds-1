@@ -339,6 +339,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #000000;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 
@@ -346,6 +347,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   font-size: 45px;
   font-weight: 700;
+  padding-bottom: 30px;
 }
 
 .about-table td {
@@ -354,7 +356,6 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 400;
 }
-
 
 .partners-list {
   display: flex;
@@ -730,7 +731,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   min-height: 416px;
   margin-bottom: 68px;
-  background: url(img/map.jpg) no-repeat top center;
+  background: url(../img/map.jpg) no-repeat top center;
   background-size: auto;
 }
 
