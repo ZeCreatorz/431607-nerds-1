@@ -574,7 +574,7 @@ input[type="radio"].visually-hidden {
 
 .sort-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .sort-link {

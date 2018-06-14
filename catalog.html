@@ -180,10 +180,16 @@
   <footer class="main-footer">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <b class="contacts-name">Nёrds design studio</b>
-      <p>191186, Санкт-Петербург, <br>ул.Б.Конюшенная,д. 19/8тел. +7(812)275-75-75</p>
-      <a class="button contact-button" href="#">Напишите нам</a>
-      <img src="img/map.jpg" width="1440" height="416" alt="Каpта проезда">
+      <div class="container">
+        <div class="contacts-widget">
+          <b class="contacts-name">Nёrds design studio</b>
+          <p>191186, Санкт-Петербург, <br>ул.Б.Конюшенная,д. 19/8</p>
+          <p>тел. +7(812)275-75-75</p>
+          <a class="button contact-button" href="#">Напишите нам</a>
+        </div>
+      </div>
+      <img class="visually-hidden" src="img/map.jpg" width="1440" height="416" alt="Карта проезда">
+      <div class="contacts-map"></div>
     </section>
     <section class="footer-social">
       <h2 class="visually-hidden">Контакты в социальных сетях</h2>
@@ -210,7 +216,7 @@
       </div>
     </section>
     <section class="modal">
-      <h2><a class="modal-button" href="#">Напишите нам</a></h2>
+      <h2>Напишите нам</h2>
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="contact-name">Ваше имя:</label>
