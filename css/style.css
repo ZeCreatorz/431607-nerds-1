@@ -130,7 +130,7 @@ input[type='radio'].visually-hidden
   position: absolute;
 
   content: "";
-  top: 5px;
+  top: 6px;
   left: 1px;
 
 
@@ -821,6 +821,44 @@ input[type='radio'].visually-hidden
     color: #000;
 }
 
+.sort-arrow {
+  margin-left: 20px;
+}
+
+.sort-arrow::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  border: 10px solid #a6a6a6;
+  border-right-width: 5.5px;
+  border-right-color: transparent;
+  border-left-width: 5.5px;
+  border-left-color: transparent;
+  opacity: 0.2;
+}
+
+.sort-arrow-down::before {
+  border-bottom-width: 0;
+}
+
+.sort-arrow-up::before {
+  border-top-width: 0;
+}
+
+.sort-arrow-current:focus::before,
+.sort-arrow-current:hover::before {
+  border-top-color: #a6a6a6;
+  border-bottom-color: #a6a6a6;
+  opacity: 1;
+}
+
+.sort-arrow:active::before,
+.sort-arrow-current::before,
+.sort-arrow-current:active::before {
+  border-top-color: #010101;
+  border-bottom-color: #010101;
+  opacity: 1;
+}
 
 .catalog-list
 {
