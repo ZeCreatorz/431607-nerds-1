@@ -753,12 +753,15 @@ input[type='radio'].visually-hidden
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -36px;
-  top: -5px;
+  left: -34px;
+  top: -2px;
   width: 23px;
   height: 23px;
 
-  border: 2px solid #b8b8b8;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -802,6 +805,18 @@ input[type='radio'].visually-hidden
 
   background-color: #a6a6a6;
   border-radius: 50%;
+}
+
+.filter-input:not(:disabled) + label:hover,
+.filter-input:not(:disabled) + label:hover::before,
+.filter-input:not(:disabled):focus + label,
+.filter-input:not(:disabled):focus + label::before {
+  color: #000000;
+  opacity: 1;
+}
+
+.filter-input:disabled + label {
+  opacity: 0.3;
 }
 
 
@@ -961,8 +976,8 @@ input[type='radio'].visually-hidden
     justify-content: space-between;
 }
 
-.catalog-item
-{
+.catalog-item {
+
     width: 360px;
     margin-right: 40px;
     margin-bottom: 35px;
@@ -1321,6 +1336,8 @@ input[type='radio'].visually-hidden
     color: #444;
 }
 
+
+
 .modal h2
 {
     font-size: 45px;
@@ -1333,6 +1350,25 @@ input[type='radio'].visually-hidden
 .modal-button
 {
     color: #000;
+}
+
+.modal {
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+
+  background-color: red;
+  border: 0;
+
+  cursor: pointer;
 }
 
 .contact-form input[type='text'],
