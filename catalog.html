@@ -38,7 +38,7 @@
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-item">
-          <legend>Стоимость:</legend>
+          <legend class="legend-price">Стоимость:</legend>
           <div class="range-filter">
             <div class="range-controls">
               <div class="scale">
@@ -58,7 +58,7 @@
           </div>
         </fieldset>
         <fieldset>
-          <legend>Сетка:</legend>
+          <legend class="legend-grid">Сетка:</legend>
           <ul class="layout-list">
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-radio" id="adapt" type="radio" name="grid" value="adapt" checked>
@@ -75,7 +75,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Особенности:</legend>
+          <legend class="legend-checkbox">Особенности:</legend>
           <ul>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" type="checkbox" name="slider" checked>
@@ -262,11 +262,11 @@
           <input id="contact-name" type="text" name="name" placeholder="Имя Фамилия" required autofocus>
         </p>
         <p class="contact-form-info">
-          <label class="label-email" for="contact-email">Ваш email:</label>
+          <label class="label-email" for="contact-email">Ваш e-mail:</label>
           <input id="contact-email" type="email" name="email" placeholder="email@example.com" required>
         </p>
         <p class="contact-form-info">
-          <label class="label-text"for="contact-text">Текста письма:</label>
+          <label class="label-text" for="contact-text">Текст письма:</label>
           <textarea id="contact-text" name="textarea" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button send-button" type="submit">Отправить</button>
