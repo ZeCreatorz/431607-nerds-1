@@ -87,7 +87,7 @@ input[type='radio'].visually-hidden
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 83px;
+    margin-bottom: 5px;
 
 
     font-size: 16px;
@@ -357,7 +357,7 @@ input[type='radio'].visually-hidden
 .services-list
 {
     display: flex;
-
+    margin-bottom: 130px;
     padding: 0;
 
     list-style: none;
@@ -543,7 +543,7 @@ input[type='radio'].visually-hidden
 .slogan-about::before {
   content: "";
   position: absolute;
-  top: -40px;
+  top: -70px;
   bottom: 0;
   width: 1160px;
   height: 2px;
@@ -1631,6 +1631,7 @@ form {
   box-shadow: 0 20px 40px rgba(0,1,1,0.75);
   background-color: #ffffff;
   z-index: 10;
+  display: none;
 
 
 }
@@ -1693,6 +1694,7 @@ form {
     font: inherit;
     font-size: 16px;
     line-height: 18px;
+    outline: none;
 
     color: #b7b7b7;
     border: 2px solid #d7dcde;
