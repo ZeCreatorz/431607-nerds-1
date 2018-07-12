@@ -1233,11 +1233,9 @@ input[type="radio"].visually-hidden {
   background-size: auto;
 }
 
-.contacts-map {
+.contacts-map iframe{
   width: 100%;
   height: 416px;
-
-  border: none;
 }
 
 .footer-contacts p {
