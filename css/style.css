@@ -1233,6 +1233,13 @@ input[type="radio"].visually-hidden {
   background-size: auto;
 }
 
+.contacts-map {
+  width: 100%;
+  height: 416px;
+
+  border: none;
+}
+
 .footer-contacts p {
   color: #666666;
 }
@@ -1405,9 +1412,6 @@ input[type="radio"].visually-hidden {
 .modal {
   -webkit-box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1416,6 +1420,8 @@ input[type="radio"].visually-hidden {
   display: none;
   width: 760px;
   padding: 70px 100px 84px;
+  margin-top: -306px;
+  margin-left: -480px;
 
   background-color: #ffffff;
 }

@@ -3,13 +3,16 @@
     var contactForm = contactPopup.querySelector(".contact-form");
     var closeButton = contactPopup.querySelector(".modal-close");
     var nameField = contactForm.querySelector("[name=name]");
-    var passField = contactForm.querySelector("[name=email]");
+    var emailField = contactForm.querySelector("[name=email]");
+    var textField = contactForm.querySelector("[name=textarea]");
 
     var isStorageSupport = true;
-    var storage = "";
+    var nameFieldStorage = "";
+    var emailFieldStorage = "";
 
     try {
-      storage = localStorage.getItem("login");
+      nameFieldStorage = localStorage.getItem("name");
+      emailFieldStorage = localStorage.getItem("email");
     } catch (err) {
       isStorageSupport = false;
     }
@@ -18,9 +21,10 @@
       evt.preventDefault();
       contactPopup.classList.add("modal-show");
 
-    if (storage) {
-      nameField.value = storage;
-      passField.focus();
+    if (nameFieldStorage && emailFieldStorage) {
+      nameField.value = nameFieldStorage;
+      emailField.value =  emailFieldStorage;
+      textField.focus();
      } else {
       nameField.focus();
      }
@@ -33,14 +37,18 @@
     });
 
     contactForm.addEventListener("submit", function (evt) {
-      if (!login.value || !password.value) {
+      if (!nameField.value || !emailField.value || !textField.value) {
         evt.preventDefault();
         contactPopup.classList.remove("modal-error");
-        contactPopup.offsetWidth = popup.offsetWidth;
+        contactPopup.offsetWidth = contactPopup.offsetWidth;
         contactPopup.classList.add("modal-error");
+        console.log(nameField.value);
+        console.log(emailField.value);
+        console.log(textField.value);
       } else {
         if (isStorageSupport) {
-          localStorage.setItem("login", login.value);
+          localStorage.setItem("name", nameField.value);
+          localStorage.setItem("email", emailField.value);
         }
       }
     });
