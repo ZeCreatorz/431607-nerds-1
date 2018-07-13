@@ -1239,6 +1239,10 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.contacts-map {
+  height: 416px;
+}
+
 .footer-contacts p {
   color: #666666;
 }
